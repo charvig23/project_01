@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Uni-ployment</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+	<link rel="stylesheet" href="dbstyle.css">
+	<link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+	<!-- for header part -->
+	<header>
+
+		<div class="logosec">
+			<img src="logo.png"
+				class="icn menuicn"
+				id="menuicn"
+				alt="menu-icon">
+			<div class="logo">Uni-ployment</div>
+		</div>
+
+		<div class="searchbar">
+			<input type="text"
+				placeholder="Search">
+			<div class="searchbtn">
+			<img src=
+"search_icon.png"
+					class="icn srchicn"
+					alt="search-icon">     
+			</div>
+		</div>
+
+		<div class="user">
+			<div class="dp">
+			<img src=
+"user_dp.png"
+					class="dpicn"
+					alt="dp">
+			</div>
+		</div>
+
+	</header>
+
+	<div class="main-container">
+		<div class="navcontainer">
+			<nav class="nav">
+				<div class="nav-upper-options ">
+					<div class="nav-option option1 ">
+						<span class="las la-ellipsis-v"></span>
+						<h4> Dashboard</h4>
+					</div>
+
+					<div class="nav-option option2">
+						<span class="las la-home"></span>
+						<h4 id="homepage" onclick="myhome()"> Homepage</h4>
+					</div>
+
+					<div class="nav-option option3">
+						<span class="las la-user"></span>
+						<h4> Profile</h4>
+					</div>
+
+					<div class="nav-option logout">
+						<span class="las la-sign-out-alt"></span>
+						<h4>Logout</h4>
+					</div>
+
+				</div>
+			</nav> 
+		</div>
+
+
+		<div class="main">
+
+			<div class="box-container">
+
+				<div class="box box1">
+					<div class="text">On-campus</div>
+					<span class="las la-university"></span>
+
+					
+				</div>
+
+				<div class="box box2">
+					<div class="text">Online</div>
+					<span class="las la-globe"></span>
+				</div>
+
+				<div class="box box3">
+					<div class="text">Investments</div>
+					<span class="las la-coins"></span>
+				</div>
+
+			</div>
+			
+			<div class="lists">
+				<div class="report-container">
+					<div class="report-header">
+						<h2 class="job-opp">Jobs</h2>
+						<div class="filter-container">
+							<label for="sort">Sort:</label>
+							<select id="sort">
+							<option value="On-campus">On-campus</option>
+							<option value="Online">Online</option>
+							<option value="Invest">Investment</option>
+							</select>
+						</div>
+						<button class="view">View All</button>
+					</div>
+
+					<div class="report-body">
+						<div class="report-topic-heading">
+							<h3 class="t-op">Available Jobs</h3>
+							<h3 class="t-op">Hours/week</h3>
+							<h3 class="t-op">Location</h3>
+							<h3 class="t-op">Status</h3>
+						</div>
+
+						<div class="items">
+							<div class="item1">
+								<h3 class="t-op-nextlvl">Library assitant</h3>
+								<h3 class="t-op-nextlvl">5</h3>
+								<h3 class="t-op-nextlvl">On-campus</h3>
+								<h3 class="t-op-nextlvl label-tag"></h3>
+							</div>
+
+							<div class="item1">
+								<h3 class="t-op-nextlvl">Canteen accounts</h3>
+								<h3 class="t-op-nextlvl">6</h3>
+								<h3 class="t-op-nextlvl">On-campus</h3>
+								<h3 class="t-op-nextlvl label-tag"></h3>
+							</div>
+
+							<div class="item1">
+								<h3 class="t-op-nextlvl">Art stall manager</h3>
+								<h3 class="t-op-nextlvl">3</h3>
+								<h3 class="t-op-nextlvl">On-campus</h3>
+								<h3 class="t-op-nextlvl label-tag"></h3>
+							</div>
+
+							
+						</div>
+					</div>
+				</div>
+				<div class="container2">
+					<div class="header2">
+						<h2 class="invest2">Investments</h2>
+						<button class="view">View All</button>
+					</div>
+					<div class="report-body">
+						<div class="report-topic-heading">
+							<h3 class="t-op">Available Jobs</h3>
+							<h3 class="t-op">Hours/week</h3>
+							<h3 class="t-op">Location</h3>
+							<h3 class="t-op">Status</h3>
+						</div>
+
+						<div class="items">
+							<div class="item1">
+								<h3 class="t-op-nextlvl">Library assitant</h3>
+								<h3 class="t-op-nextlvl">5</h3>
+								<h3 class="t-op-nextlvl">On-campus</h3>
+								<h3 class="t-op-nextlvl label-tag"></h3>
+							</div>
+
+							<div class="item1">
+								<h3 class="t-op-nextlvl">Canteen accounts</h3>
+								<h3 class="t-op-nextlvl">6</h3>
+								<h3 class="t-op-nextlvl">On-campus</h3>
+								<h3 class="t-op-nextlvl label-tag"></h3>
+							</div>
+
+							<div class="item1">
+								<h3 class="t-op-nextlvl">Art stall manager</h3>
+								<h3 class="t-op-nextlvl">3</h3>
+								<h3 class="t-op-nextlvl">On-campus</h3>
+								<h3 class="t-op-nextlvl label-tag"></h3>
+							</div>
+
+							
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+<script src="func.js"></script>
+</body>
+</html>
